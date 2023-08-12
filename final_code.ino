@@ -35,7 +35,7 @@ void loop() {
   String digital_value1_ = input_values.substring(0, comma_index);
   String digital_value2_ = input_values.substring(comma_index + 1);
 
-  // Convert the string values to float integer type
+  // Convert the string values to float data type
 
   float digital_value1 = digital_value1_.toFloat();
   float digital_value2 = digital_value2_.toFloat();
