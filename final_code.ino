@@ -32,13 +32,13 @@ void loop() {
   }
 
   // Extract the substrings before and after the comma
-  String digital_value1 = input_values.substring(0, comma_index);
-  String digital_value2 = input_values.substring(comma_index + 1);
+  String digital_value1_ = input_values.substring(0, comma_index);
+  String digital_value2_ = input_values.substring(comma_index + 1);
 
-  // Convert the floating-point values to voltages
+  // Convert the string values to float integer type
 
-  float digital_value1 = digital_value1.toFloat();
-  float digital_value2 = digital_value2.toFloat();
+  float digital_value1 = digital_value1_.toFloat();
+  float digital_value2 = digital_value2_.toFloat();
 
   // Convert the floating-point values to voltages
   float first_voltage = (digital_value1 / 255.0) * 3.3;
